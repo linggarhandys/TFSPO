@@ -7,7 +7,7 @@ import Setupalat from "./praktikum-p1-percobaan2/Setupalat";
 import PraktikumP2p1 from "./PraktikumP2p1";
 import KeyboardArrowLeft from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
-import SwipeableViews from "react-swipeable-views";
+// import SwipeableViews from "react-swipeable-views";
 import { useTheme } from "@mui/material/styles";
 import MobileStepper from "@mui/material/MobileStepper";
 import "./styles/praktikum.css";

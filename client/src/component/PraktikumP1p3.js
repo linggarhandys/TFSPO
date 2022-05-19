@@ -6,7 +6,7 @@ import { styled } from "@mui/system";
 import PraktikumP1p3percobaan from "./praktikum-p1-percobaan3/PraktikumP1p3percobaan";
 import KeyboardArrowLeft from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
-import SwipeableViews from "react-swipeable-views";
+// import SwipeableViews from "react-swipeable-views";
 import { useTheme } from "@mui/material/styles";
 import MobileStepper from "@mui/material/MobileStepper";
 import "./styles/praktikum.css";
