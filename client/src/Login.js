@@ -190,7 +190,7 @@ export default function Login({ setUser, setData, setSignupAsisten }) {
 
   return (
     <div className={styles.logincontainer}>
-      <div className="root-login">
+      {/* <div className="root-login"> */}
       <Grid container>
         <Grid item xs={12} sm={12} md={8} lg={8} >
           <div className={styles.loginfont}>
