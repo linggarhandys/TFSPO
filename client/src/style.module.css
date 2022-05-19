@@ -1,0 +1,353 @@
+@media only screen and (max-width: 500px) {
+    .paddingcenterinner {
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 30%;
+        min-width: 50%;
+    }
+
+    .paddingcentermiddle {
+        display: table-cell;
+        vertical-align: middle;
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .loginfontdeskripsi {
+       
+        position: relative;
+        margin: 0 auto;
+        height: auto;
+        width: 100%;
+    }
+    
+    .paddingcenterouter {
+            padding-top: 5%;
+            width: 100%;
+    }
+
+    .loginlogocolumn {
+        width: 100%;
+    }
+
+    .paddingcenterinner {
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 10%;
+        min-width: 0%;
+    }
+    
+    .paddingcentermiddle {
+        display: table-cell;
+        vertical-align: middle;
+        width: 100%;
+    }
+}
+
+.logincontainer{
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #071020;
+}
+
+.formlogin {
+    text-align: center;
+    padding: 0 0 0 0;
+}
+
+.paddingcenterouter {
+    display: table;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.paddingcentermiddle{
+    display: table-cell;
+    vertical-align: middle;
+    width: 25%;
+}
+
+.paddingcenterinner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    /* Whatever width you want */
+}
+
+.loginbutton {
+    background-color: initial;
+    margin: 2.5% auto;
+    background-image: linear-gradient(-180deg, #05c29c, #037265f9);
+    border-radius: 5px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: Inter,
+        -apple-system,
+        system-ui,
+        Roboto,
+        "Helvetica Neue",
+        Arial,
+        sans-serif;
+    min-height: 100%;
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #005c64 0 -3px 0 inset;
+    line-height: 330%;
+    padding: 0 10%;
+    pointer-events: auto;
+    position: relative;
+    text-align: center;
+    transition: box-shadow .15s, transform .15s;
+    vertical-align: top;
+    width: 80%;
+    border: 0;
+    overflow: hidden;
+}
+
+.loginfont{
+    position: relative;
+    padding: 3% 5% 0% 5% ;
+    font-variant: small-caps;
+    color: #b48608;
+    font-family: 'Droid serif', serif;
+    font-weight: 400;
+    line-height: 5vh;
+    text-align: center;
+}
+
+.loginfontdeskripsi {
+    margin:0 auto;
+    position: relative;
+    color: #b48608;
+    font-family: 'Droid serif', serif;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.loginfont .judul1{
+    margin:2vh;
+    font-size: 5.56vw;
+}
+
+.loginfont .judul2{
+    font-size: 2.26vw;
+}
+
+
+
+.loginformfont1{
+    font-variant:small-caps;
+    color:#fff;
+    font-Family:'Libre Baskerville', serif;
+    font-weight:100;
+    text-align: center;
+    font-size: 30px;
+}
+
+.loginformfont2 {
+    font-variant: small-caps;
+    color: #fff;
+    font-Family: 'Libre Baskerville', serif;
+    font-weight: 100;
+    text-align: center;
+    font-size: 20px;
+}
+
+.loginbutton:focus {
+    box-shadow: #279383 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #27936b 0 -3px 0 inset;
+}
+
+.loginbutton:hover {
+    transform: translateY(-2px);
+}
+
+.loginbutton:active {
+    box-shadow: #27936f 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+.inputlogin {
+    border: 2px solid #eee;
+    border-radius: 5px;
+    height: 40px;
+    width: 75%;
+    margin: 0px 0px 10px 0px ;
+    
+}
+
+.loginlogo{
+    padding-top: 10px;
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto;
+    display: block;
+    object-fit: contain;
+}
+
+.boxloginlogo {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    max-height: 80% ;
+ }
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.loginlogocolumn{
+    float: left;
+    width: 5vw;
+    padding-right: 1vw;
+}
+
+.navigationcolumn {
+    float: left;
+    width: 25%;
+    padding: 5px;
+}
+
+.navigationrow::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.navigation {
+    background-color: #fff;
+    border: 2px black;
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px,
+        rgba(45, 35, 66, .3) 0 7px 13px -3px,
+        #01272b 0 -3px 0 inset;
+    border-radius: 5px;
+    min-height: 300px;
+    max-width: 300px;
+}
+
+.loginparagrafcontainer {
+    position: relative;
+    margin: 0 auto;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    max-width: 20%;
+}
+
+.loginparagrafimage{
+    display: block;
+    padding-top: 1%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.loginparagrafdeskripsi{
+    position: relative;
+    margin: 0 auto;
+    height: auto;
+    width: 80%;
+}
+
+.loginparagraftextcontainer{
+    float: left;
+    margin-top: 1%;
+    padding-left: 1%;
+    padding-top: 1%;
+    padding-right: 1%;
+    background-color: rgb(255, 255, 255);
+    border: 0px 6px 6px 0px black;
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px,
+        rgba(45, 35, 66, .3) 0 7px 13px -3px,
+        #01272b 0 -3px 0 inset;
+    border-radius: 5px;
+    min-height: 290px;
+    max-height: 290px;
+    max-width: 500px;
+}
+
+.logindeskripsi{
+        
+            font-Family: 'Libre Baskerville', serif;
+            font-weight: 10;
+            text-align: justify;
+            font-size: 20px;
+}
+
+.loginfooter {
+    position: fixed;
+    height: 10vh;
+    background-color: rgb(13, 50, 68);
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+}
+
+.footertext{
+    text-align: center;
+}
+
+.formsignup {
+    padding: 0 0 0 0;
+}
+
+.signupformfont1 {
+    font-variant: small-caps;
+    color: rgb(0, 0, 0);
+    font-Family: 'Libre Baskerville', serif;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+}
+
+.signupformfont2 {
+    font-variant: small-caps;
+    color: #000;
+    font-Family: 'Libre Baskerville', serif;
+    font-weight: 100;
+    text-align: left;
+    font-size: 14px;
+}
+
+.inputsignup {
+    border: 2px solid #eee;
+    border-radius: 5px;
+    height: 40px;
+    width: 100%;
+    margin: 0px 0px 10px 0px;
+
+}
+
+.signupbutton {
+    background-color: initial;
+    margin: 2.5% auto;
+    background-image: linear-gradient(-180deg, #05c29c, #037265f9);
+    border-radius: 5px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: Inter,
+        -apple-system,
+        system-ui,
+        Roboto,
+        "Helvetica Neue",
+        Arial,
+        sans-serif;
+    min-height: 100%;
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #005c64 0 -3px 0 inset;
+    line-height: 330%;
+    padding: 0 10%;
+    pointer-events: auto;
+    position: relative;
+    text-align: center;
+    transition: box-shadow .15s, transform .15s;
+    vertical-align: top;
+    width: 100%;
+    border: 0;
+    overflow: hidden;
+}
