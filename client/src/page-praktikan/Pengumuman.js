@@ -61,9 +61,9 @@ const Pengumuman = ({}) => {
   const handleClose = () => setOpen(false);
   const [description, setDescription] = useState("");
 
-  //const url = "http://localhost:5000/pengumuman/db";
+  const url = "http://localhost:5000/pengumuman/db";
 
-  const url = "https://ui-spo-backend.herokuapp.com/pengumuman/db";
+  //const url = "https://ui-spo-backend.herokuapp.com/pengumuman/db";
 
   const onSubmitForm = async (e) => {
     try {
@@ -74,6 +74,7 @@ const Pengumuman = ({}) => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body),
       });
+      setOpen(false);
     } catch (err) {
       console.error(err.message);
     }
@@ -97,13 +98,12 @@ const Pengumuman = ({}) => {
             width: "100%",
           }}
         >
-          <h1>Pengumuman</h1>
-          {/* <Typography variant="h2" component="h1" gutterBottom>
+          <Typography variant="h2" component="div" gutterBottom>
             Pengumuman
-          </Typography> */}
-          {/* <Button variant="contained" color="success" onClick={handleOpen}>
+          </Typography>
+          <Button variant="contained" color="success" onClick={handleOpen}>
             Tambah Pengumuman
-          </Button> */}
+          </Button>
           <StyledModal
             aria-labelledby="unstyled-modal-title"
             aria-describedby="unstyled-modal-description"

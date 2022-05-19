@@ -98,8 +98,22 @@ const Validasi = () => {
   const [jadwal, setJadwal] = React.useState([]);
   const [sqljadwal, setSqljadwal] = useState();
 
+  const handleChange1 = (event) => {
+    const newState = [...kelompok]; // creates a copy of the current array
+    newState[0] = event.target.value;
+    setKelompok(newState);
+  };
+
   const handleChange = (event) => {
-    setKelompok(event.target.value);
+    const newState = [...kelompok]; // creates a copy of the current array
+    newState[1] = event.target.value;
+    setKelompok(newState);
+  };
+
+  const handleChange2 = (event) => {
+    const newState = [...kelompok]; // creates a copy of the current array
+    newState[1] = event.target.value;
+    setKelompok(newState);
   };
 
   const handleChangeTab = (event, newValue) => {
@@ -312,8 +326,8 @@ const Validasi = () => {
     let nrp = rows.nrp;
     let email = rows.email;
     const userrole = "Asisten";
-    let kelompoka = rows.kelompok;
-    let kelompoka2 = rows.kelompok2;
+    let kelompoka = kelompok[0];
+    let kelompoka2 = kelompok[1];
     try {
       const res = await axios.post(url2, {
         username,
@@ -529,7 +543,7 @@ const Validasi = () => {
                     </TableRow>
                   </TableHead>
                   <TableBody>
-                    {asisten.map((rows) => (
+                    {asisten.map((rows, i, j) => (
                       <StyledTableRow key={rows.user_id}>
                         <StyledTableCell
                           component="th"
@@ -551,12 +565,15 @@ const Validasi = () => {
                           {rows.kontak_line}
                         </StyledTableCell>
                         <StyledTableCell align="center">
-                          <div key={rows.user_id}>
-                            <FormControl fullWidth key={rows.user_id}>
+                          <div key={rows.user_id + "kelompok1"}>
+                            <FormControl fullWidth key={i}>
                               <Select
-                                value={rows.kelompok ? rows.kelompok : kelompok}
+                                key={i}
+                                value={
+                                  rows.kelompok ? rows.kelompok : kelompok[0]
+                                }
                                 label="Kelompok 1"
-                                onChange={handleChange}
+                                onChange={handleChange1}
                               >
                                 <MenuItem value={"Kelompok 1"}>
                                   Kelompok 1
@@ -629,12 +646,15 @@ const Validasi = () => {
                           </div>
                         </StyledTableCell>
                         <StyledTableCell align="center">
-                          <div key={rows.user_id}>
-                            <FormControl fullWidth key={rows.user_id}>
+                          <div key={rows.user_id + "kelompok2"}>
+                            <FormControl fullWidth key={j}>
                               <Select
-                                value={rows.kelompok ? rows.kelompok : kelompok}
+                                key={j}
+                                value={
+                                  rows.kelompok ? rows.kelompok : kelompok[1]
+                                }
                                 label="Kelompok 2"
-                                onChange={handleChange}
+                                onChange={handleChange2}
                               >
                                 <MenuItem value={"Kelompok 1"}>
                                   Kelompok 1

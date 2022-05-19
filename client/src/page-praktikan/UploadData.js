@@ -58,12 +58,12 @@ const UploadData = ({}) => {
   const [kelompok, setKelompok] = useState(null);
   const [grup, setGrup] = useState();
 
-  //  const urlgetkelompok = "http://localhost:5000/api/db/filekelompok";
-  //const urluploadfile = "http://localhost:5000/api/uploadfile";
+  const urlgetkelompok = "http://localhost:5000/api/db/filekelompok";
+  const urluploadfile = "http://localhost:5000/api/uploadfile";
 
-  const urluploadfile = "https://ui-spo-backend.herokuapp.com/api/uploadfile";
-  const urlgetkelompok =
-    "https://ui-spo-backend.herokuapp.com/api/db/filekelompok";
+  //const urluploadfile = "https://ui-spo-backend.herokuapp.com/api/uploadfile";
+  //const urlgetkelompok =
+  // ("https://ui-spo-backend.herokuapp.com/api/db/filekelompok");
   const getFileStatus = async () => {
     try {
       const response = await fetch("http://localhost:5000/db/file");

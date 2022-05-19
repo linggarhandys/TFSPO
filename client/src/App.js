@@ -53,6 +53,8 @@ import Home from "./page-praktikan/Home.js";
 import HomeIcon from "@mui/icons-material/Home";
 import AssistantIcon from "@mui/icons-material/Assistant";
 import Penilaian from "./page-praktikan/Penilaian";
+import UploadData from "./page-praktikan/UploadData";
+import Download from "./page-praktikan/Download";
 
 const drawerWidth = 240;
 
@@ -470,6 +472,10 @@ export default function Sidebar() {
                 <Route path="pengumpulan" element={<Pengumpulan />} />
                 <Route path="pengumuman" element={<Pengumuman />} />
                 <Route path="praktikum" element={<Praktikum />} />
+                <Route path="/upload" element={<Pengumpulan />} />
+                <Route path="/pengumpulan" element={<Download />} />
+                <Route path="/pengumuman" element={<Pengumuman />} />
+                <Route path="/praktikum" element={<Praktikum />} />
                 <Route path="/overviewp1" element={<Overview_P1 />} />
                 <Route path="/testpage" element={<Testpage />} />
                 <Route path="/signup" element={<Signup />} />

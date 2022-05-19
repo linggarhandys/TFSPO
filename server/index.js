@@ -33,7 +33,7 @@ app.use(
 );
 app.use(express.json());
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname)));
+app.use(express.static(__dirname));
 
 var corsOptions = {
   origin: "http://localhost:3000",
@@ -498,8 +498,20 @@ app.post("/api/signup/pr4ktikan", async (req, res) => {
 
 app.post("/api/signup/4sisten", async (req, res) => {
   try {
-    const { username, userpassword, nama, nrp, email, userrole, kelompoka } =
-      req.body;
+    const {
+      username,
+      userpassword,
+      nama,
+      nrp,
+      email,
+      userrole,
+      kelompoka,
+      kelompoka2,
+    } = req.body;
+    const updatefilepraktikum = await pool.query(
+      "UPDATE file_p2 SET asisten=$1 WHERE kelompok=$2 OR kelompok=$3 RETURNING *",
+      [nama, kelompoka, kelompoka2]
+    );
     const find = await pool.query(
       "SELECT * FROM user_praktikum WHERE username=$1",
       [username]
@@ -755,7 +767,6 @@ app.post("/api/upload", upload.single("file"), (req, res) => {
 
 app.post("/api/db/filekelompok", async (req, res) => {
   try {
-    console.log("called");
     const { nama } = req.body;
     const allFiles = await pool.query(
       "SELECT kelompok FROM file_p2 WHERE asisten = $1",
@@ -775,12 +786,11 @@ app.post(
     try {
       const { kolom, kelompok } = req.body;
       const { path, mimetype, originalname } = req.file;
-      console.log("file", req.file);
-      console.log("kolom", kolom);
-      console.log("kelompok", kelompok);
       let [filename, extension] = originalname.split(".");
+
       let nameFile =
         filename + "-" + dayjs().format("DDMMYYYY") + "." + extension;
+      console.log(nameFile);
       let task = "UPDATE file_p2 SET " + kolom + "=$1 WHERE kelompok = $2";
       const updateFile = await pool.query(task, [nameFile, kelompok]);
       /* const file = new File({
@@ -802,10 +812,34 @@ app.post(
   }
 );
 
-app.get("/api/download", (req, res) => {
-  var file = path.join(
-    __dirname + "/public/uploads/1st law review problems-13032022.pdf"
-  );
+app.post("/api/download", async (req, res) => {
+  try {
+    const { kelompok, kolom } = req.body;
+    let namakolom;
+    console.log("kolom:", kolom);
+    kolom === 1
+      ? (namakolom = "file_1")
+      : kolom == 2
+      ? (namakolom = "file_2")
+      : (namakolom = "file_3");
+    console.log("namakolom:", namakolom);
+    let task = "SELECT " + namakolom + " FROM file_p2 WHERE Kelompok = $1";
+
+    const namaFile = await pool.query(task, [kelompok]);
+    let kolomtarget = namaFile.rows[0][Object.keys(namaFile.rows[0])[0]]; // "a"
+    res.send(kolomtarget);
+  } catch (error) {
+    res.status(400).send(error.message);
+  }
+  //  var file = path.join(
+  //   __dirname + "/public/uploads/1st law review problems-13032022.pdf"
+  //);
+  // res.download(file);
+});
+
+app.get("/api/download/:file", (req, res, next) => {
+  let file = path.join(__dirname + "/public/uploads/" + req.params.file);
+  console.log(file);
   res.download(file);
 });
 

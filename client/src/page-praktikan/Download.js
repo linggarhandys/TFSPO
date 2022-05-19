@@ -57,9 +57,12 @@ const Download = ({}) => {
   });
   const [kelompok, setKelompok] = useState(null);
   const [grup, setGrup] = useState();
+  const [daftar, setDaftar] = React.useState({});
+  const [target, setTarget] = useState();
 
   const urlgetkelompok = "http://localhost:5000/api/db/filekelompok";
   const urluploadfile = "http://localhost:5000/api/uploadfile";
+  const url = "http://localhost:5000/api/download";
 
   //const urluploadfile = "https://ui-spo-backend.herokuapp.com/api/uploadfile";
   //const urlgetkelompok =
@@ -78,14 +81,22 @@ const Download = ({}) => {
   const kolomRef = useRef([]);
   kolomRef.current = state.map((_, i) => kolomRef.current[i] ?? createRef());
 
-  useEffect(() => {
-    getFileStatus();
-    setState(rows);
-  }, []);
-
   const userString = sessionStorage.getItem("accessToken");
   const userToken = JSON.parse(userString);
   const getUser = Object.values(userToken);
+
+  useEffect(() => {
+    console.log("target", target);
+    handleOnDownload();
+    setDaftar(() => {
+      // getting stored value
+      const saved = localStorage.getItem("asisten");
+      const initialValue = JSON.parse(saved);
+      return initialValue || "";
+    });
+    getFileStatus();
+    setState(rows);
+  }, [target]);
 
   function createData(Item, Column) {
     return { Item, Column };
@@ -99,21 +110,47 @@ const Download = ({}) => {
   };
 
   const handleOnDownload = async (e) => {
-    console.log(state);
     const link = document.createElement("a");
     link.target = "_blank";
-    link.download =
-      getUser[1].toString() + "-" + getUser[2].toString() + "- TP1";
+    link.download = target;
+    let urldownload = url + "/" + target;
+    console.log(urldownload);
     axios
-      .get("http://localhost:5000/api/download", {
+      .get(urldownload, {
         responseType: "blob",
       })
       .then((res) => {
-        link.href = URL.createObjectURL(
-          new Blob([res.data], { type: "text/plain" })
-        );
+        link.href = URL.createObjectURL(new Blob([res.data]));
         link.click();
       });
+  };
+
+  const handleConsole = () => {
+    console.log(target);
+  };
+
+  const handleOnDownload2 = async (rows) => {
+    rows.preventDefault();
+    const kelompok = getUser[18].toString();
+    const kolom = Number(rows.target[0].value) + 1;
+    let target;
+
+    const res = await axios.post(
+      url,
+      {
+        kelompok,
+        kolom,
+      },
+      {
+        headers: {
+          "Access-Control-Allow-Origin":
+            "https://riset.its.ac.id/praktikum/tf-spo/",
+          //"http://localhost:3000/praktikum/tf-spo/",
+        },
+      }
+    );
+    setTarget(res.data);
+    console.log("res.data:", res.data);
   };
 
   const rows = [
@@ -150,6 +187,7 @@ const Download = ({}) => {
 
   return (
     <>
+      <button onClick={handleConsole}>aaaa</button>
       <Table>
         <TableHead>
           <TableRow>
@@ -164,12 +202,8 @@ const Download = ({}) => {
                 {rows.Item}
               </StyledTableCell>
               <StyledTableCell align="center">
-                <form onSubmit={handleOnDownload}>
-                  <input
-                    value={rows.Item}
-                    type="hidden"
-                    ref={kolomRef.current[i]}
-                  />
+                <form onSubmit={handleOnDownload2}>
+                  <input value={i} type="hidden" ref={kolomRef.current[i]} />
                   <button type="submit">Download</button>
                 </form>
               </StyledTableCell>

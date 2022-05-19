@@ -2,7 +2,7 @@ const Pool = require("pg").Pool;
 
 //supabase MM-DD-YYYY
 
-const pool1 = new Pool({
+const pool = new Pool({
   user: "postgres",
   password: "admin",
   host: "localhost",
@@ -10,7 +10,7 @@ const pool1 = new Pool({
   database: "praktikum",
 });
 
-const pool = new Pool({
+const pool1 = new Pool({
   user: "postgres",
   password: "Tekfis1965ECS",
   host: "db.blsnjoegcqtrhpqojrip.supabase.co",

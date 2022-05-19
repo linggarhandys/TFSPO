@@ -17,6 +17,7 @@ import KeyboardArrowLeft from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
 import Knobp2p2 from "./Knobp2p2";
 import Pengumpulan from "../page-praktikan/Pengumpulan";
+import UploadData from "../page-praktikan/UploadData";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import PropTypes from "prop-types";
@@ -388,7 +389,7 @@ const PraktikumP2p2 = () => {
               </TabPanel>
             </Box>
             <TabPanel value={value} index={1}>
-              {data.userrole === "Praktikan" ? <Download /> : <Pengumpulan />}
+              {data.userrole === "Praktikan" ? <Download /> : <UploadData />}
             </TabPanel>
           </Paper>
         </Grid>

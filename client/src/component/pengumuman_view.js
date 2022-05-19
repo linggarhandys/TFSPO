@@ -13,10 +13,10 @@ const PengumumanView = () => {
   const [pengumuman, setPengumuman] = useState([]);
   const [show, setShow] = useState(true);
 
-  //const url = "http://localhost:5000/pengumuman/db/";
-  //const url1 = "http://localhost:5000/pengumuman/db";
-  const url = "https://ui-spo-backend.herokuapp.com/pengumuman/db/";
-  const url1 = "https://ui-spo-backend.herokuapp.com/pengumuman/db";
+  const url = "http://localhost:5000/pengumuman/db/";
+  const url1 = "http://localhost:5000/pengumuman/db";
+  //const url = "https://ui-spo-backend.herokuapp.com/pengumuman/db/";
+  //const url1 = "https://ui-spo-backend.herokuapp.com/pengumuman/db";
 
   const deletePengumuman = async (id) => {
     try {

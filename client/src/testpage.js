@@ -231,10 +231,6 @@ export default function BasicDatePicker() {
     page > 0 ? Math.max(0, (1 + page) * rowsPerPage - rows.length) : 0;
 
   const simRef = useRef();
-  // let a1 = new aae(
-  //   document.querySelector(".anim1"), // dom element, where the animation should be instantiated
-  //   "./asset/P1_P2_open/P1_20Openloop.js" // url to the js file; can be an absolute or relative link
-  // );
 
   return (
     <>
