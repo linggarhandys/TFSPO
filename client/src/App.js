@@ -48,6 +48,7 @@ import FactCheckIcon from "@mui/icons-material/FactCheck";
 import PraktikumP1p1 from "./component/PraktikumP1p1";
 import Signupasisten from "./Signupasisten";
 import logo from "./asset/img/logo tf.png";
+import itslogo from "./asset/img/Logo ITS.png";
 import Home from "./page-praktikan/Home.js";
 import HomeIcon from "@mui/icons-material/Home";
 import AssistantIcon from "@mui/icons-material/Assistant";
@@ -120,35 +121,17 @@ const Drawer = styled(MuiDrawer, {
   }),
 }));
 
-function ListItemLink(props) {
-  const { icon, primary, to } = props;
 
-  const renderLink = React.useMemo(
-    () =>
-      React.forwardRef(function Link(itemProps, ref) {
-        return <RouterLink to={to} ref={ref} {...itemProps} />;
-      }),
-    [to]
-  );
 
-  return (
-    <li>
-      <ListItem button component={renderLink}>
-        {icon ? <ListItemIcon>{icon}</ListItemIcon> : null}
-        <ListItemText primary={primary} />
-      </ListItem>
-    </li>
-  );
-}
-
-ListItemLink.propTypes = {
-  icon: PropTypes.element,
-  primary: PropTypes.string.isRequired,
-  to: PropTypes.string.isRequired,
-};
+// ListItemLink.propTypes = {
+//   icon: PropTypes.element,
+//   primary: PropTypes.string.isRequired,
+//   to: PropTypes.string.isRequired,
+// };
 
 export default function Sidebar() {
   const theme = useTheme();
+  const [currentIndex, setCurrentIndex] = React.useState(0);
   const [open, setOpen] = React.useState(false);
   const { user, setUser } = useToken();
   const [data, setData] = React.useState(() => {
@@ -256,6 +239,28 @@ export default function Sidebar() {
   // return <>Loading...</>;
   //}
 
+  function ListItemLink(props) {
+    const { icon, primary, to, index } = props;
+  
+    const renderLink = React.useMemo(
+      () =>
+        React.forwardRef(function Link(itemProps, ref) {
+          return <RouterLink to={to} ref={ref} {...itemProps} />;
+        }),
+      [to]
+    );
+  
+    return (
+      <li>
+        {console.log("indexx", index, currentIndex)}
+        <ListItem button component={renderLink}>
+          {icon ? <ListItemIcon onClick={() => setCurrentIndex(index)} style={{color: currentIndex == index ? "#b8bbbf" : "#5d5f61"}}>{icon}</ListItemIcon> : null}
+          <ListItemText primary={primary} />
+        </ListItem>
+      </li>
+    );
+  }
+
   return (
     <MemoryRouter initialEntries={["/"]} initialIndex={0}>
       {user ? (
@@ -277,7 +282,12 @@ export default function Sidebar() {
                   <MenuIcon />
                 </IconButton>
               </ClickAwayListener>
-              <img src={logo} alt="Logo" width="60" height="60" />
+              <img
+                src={itslogo}
+                alt="Logo ITS"
+                style={{width: "3.5vw", height: "3vw", marginRight: "2vw"}}
+              />
+              <img src={logo} alt="Logo" style={{width: "3vw", height: "3vw"}} />
               <Box sx={{ flexGrow: 1 }} />
               <Box sx={{ display: { xs: "none", md: "flex" } }}>
                 <IconButton
@@ -360,67 +370,79 @@ export default function Sidebar() {
                   to="home"
                   primary="Halaman Depan"
                   icon={<HomeIcon />}
+                  index={0}
                 />
                 <ListItemLink
                   to="testpage"
                   primary="Profil"
                   icon={<PersonIcon />}
+                  index={1}
                 />
                 <ListItemLink
                   to="profil"
                   primary="Profil"
                   icon={<PersonIcon />}
+                  index={1}
                 />
 
                 <ListItemLink
                   to="validasi"
                   primary="Validasi"
                   icon={<FactCheckIcon />}
+                  index={2}
                 />
 
                 <ListItemLink
                   to="pengumuman"
                   primary="Pengumuman"
                   icon={<AnnouncementIcon />}
+                  index={3}
                 />
                 <ListItemLink
                   to="praktikum"
                   primary="Praktikum"
                   icon={<AssignmentTurnedInIcon />}
+                  index={4}
                 />
                 <ListItemLink
                   to="penilaian"
                   primary="Penilaian"
                   icon={<AssistantIcon />}
+                  index={5}
                 />
                 <ListItemLink
                   to="pengumpulan"
                   primary="Pengumpulan"
                   icon={<UploadFileIcon />}
+                  index={6}
                 />
               </List>
             ) : (
               <List>
-                <ListItemLink to="home" primary="Home" icon={<HomeIcon />} />
+                <ListItemLink index={0} to="home" primary="Home" icon={<HomeIcon />} />
                 <ListItemLink
                   to="profil"
                   primary="Profil"
                   icon={<PersonIcon />}
+                  index={1}
                 />
                 <ListItemLink
                   to="pengumuman"
                   primary="Pengumuman"
                   icon={<AnnouncementIcon />}
+                  index={2}
                 />
                 <ListItemLink
                   to="praktikum"
                   primary="Praktikum"
                   icon={<AssignmentTurnedInIcon />}
+                  index={3}
                 />
                 <ListItemLink
                   to="pengumpulan"
                   primary="Pengumpulan"
                   icon={<UploadFileIcon />}
+                  index={4}
                 />
               </List>
             )}

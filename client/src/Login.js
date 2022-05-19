@@ -18,6 +18,7 @@ import { ThemeProvider, createTheme } from "@mui/system";
 import Signup from "./Signup";
 import ClickAwayListener from "@mui/material/ClickAwayListener";
 import e from "cors";
+import './_login.css'
 
 const useStyles = makeStyles((theme) => ({
   root: {},
@@ -190,8 +191,9 @@ export default function Login({ setUser, setData, setSignupAsisten }) {
 
   return (
     <div className={styles.logincontainer}>
+      <div className="root-login">
       <Grid container>
-        <Grid item xs={12} sm={12} md lg>
+        <Grid item xs={12} sm={12} md={8} lg={8} >
           <div className={styles.loginfont}>
             <div className={styles.judul1}>R-labSPO</div>
             <div className={styles.judul2}>
@@ -222,10 +224,11 @@ export default function Login({ setUser, setData, setSignupAsisten }) {
             </p>
           </div>
         </Grid>
-        <Grid item xs={12} sm={12} md={3} lg={3}>
+        <Grid item xs={12} sm={12} md={4} lg={4}>
           <div className={styles.paddingcenterouter}>
             <div className={styles.paddingcentermiddle}>
-              <div className={styles.paddingcenterinner}>
+              {/* <div className={styles.paddingcenterinner}> */}
+              <div >
                 <Box
                   sx={{
                     bgcolor: "#032573",
@@ -362,6 +365,7 @@ export default function Login({ setUser, setData, setSignupAsisten }) {
           </div>
         </div>
       </Grid>
+      </div>
     </div>
   );
 }

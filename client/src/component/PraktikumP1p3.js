@@ -169,7 +169,7 @@ const PraktikumP1p3 = () => {
           </Typography>
           <Typography sx={{ ml: 3, mr: 3, mt: 3 }}>
             Pada percobaan ini dilakukan pengendalian posisi (sudut) pada motor
-            dengan skema close loop.
+            dengan skema closed loop.
           </Typography>
           <Card>
             <CardMedia component="img" src={gambar} />
@@ -191,7 +191,7 @@ const PraktikumP1p3 = () => {
         <Grid container className={classes.gridContainer}>
           <Grid item xs={12} sm={12} md={4} lg={12}>
             <Paper variant="h3" className={classes.paper} align="center">
-              <Typography variant="h3">UJI CLOSE LOOP</Typography>
+              <Typography variant="h3">UJI CLOSED LOOP</Typography>
             </Paper>
             <MobileStepper
               steps={maxSteps}

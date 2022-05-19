@@ -97,12 +97,13 @@ const Pengumuman = ({}) => {
             width: "100%",
           }}
         >
-          <Typography variant="h2" component="div" gutterBottom>
+          <h1>Pengumuman</h1>
+          {/* <Typography variant="h2" component="h1" gutterBottom>
             Pengumuman
-          </Typography>
-          <Button variant="contained" color="success" onClick={handleOpen}>
+          </Typography> */}
+          {/* <Button variant="contained" color="success" onClick={handleOpen}>
             Tambah Pengumuman
-          </Button>
+          </Button> */}
           <StyledModal
             aria-labelledby="unstyled-modal-title"
             aria-describedby="unstyled-modal-description"

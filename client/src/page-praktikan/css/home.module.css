@@ -46,10 +46,11 @@
 }
 
 .paddingcenterinner {
- display: flex;
- align-items: center;
- justify-content: center;
-    /* Whatever width you want */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 .navigasiteks{
@@ -68,6 +69,7 @@
     min-width: 5vw;
     min-height: 5vw;
     margin-right: 1vw;
+    padding: 10px;
 }
 
 .paper .footer{
@@ -81,6 +83,7 @@
     font-family: 'Droid serif', serif;
     font-weight: 400;
     color: #fff;
+    font-size: 18px;
 }
 
 .paper .icon{
