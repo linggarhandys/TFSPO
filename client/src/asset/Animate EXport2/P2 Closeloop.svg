@@ -1,0 +1,648 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" width="800px" height="480px" viewBox="0 0 800 480">
+<defs>
+<image id="image__2__png" x="0" y="0" width="797" height="507" xlink:href="./images/image__2__png.png"/>
+
+<image id="Servo_Amp_png" x="0" y="0" width="410" height="487" xlink:href="./images/Servo_Amp_png.png"/>
+
+<image id="Power_supply_png" x="0" y="0" width="415" height="489" xlink:href="./images/Power_supply_png.png"/>
+
+<image id="OA150A__2__png" x="0" y="0" width="471" height="473" xlink:href="./images/OA150A__2__png.png"/>
+
+<image id="Attenuator_png" x="0" y="0" width="308" height="296" xlink:href="./images/Attenuator_png.png"/>
+
+<image id="PAI50C__2__png" x="0" y="0" width="475" height="476" xlink:href="./images/PAI50C__2__png.png"/>
+
+<image id="Tacho_unit_png" x="0" y="0" width="1408" height="801" xlink:href="./images/Tacho_unit_png.png"/>
+
+<image id="IP150H_png" x="0" y="0" width="496" height="549" xlink:href="./images/IP150H_png.png"/>
+
+<image id="FL_1_png" x="0" y="0" width="153" height="152" xlink:href="./images/FL_1_png.png"/>
+
+<image id="FL_2_png" x="0" y="0" width="152" height="152" xlink:href="./images/FL_2_png.png"/>
+
+<image id="FL_3_png" x="0" y="0" width="151" height="151" xlink:href="./images/FL_3_png.png"/>
+
+<image id="FL_4_png" x="0" y="0" width="152" height="153" xlink:href="./images/FL_4_png.png"/>
+
+<image id="FL_5_png" x="0" y="0" width="151" height="151" xlink:href="./images/FL_5_png.png"/>
+
+<image id="FL_6_png" x="0" y="0" width="152" height="152" xlink:href="./images/FL_6_png.png"/>
+
+<image id="FL_7_png" x="0" y="0" width="155" height="152" xlink:href="./images/FL_7_png.png"/>
+
+<image id="FL_8_png" x="0" y="0" width="152" height="156" xlink:href="./images/FL_8_png.png"/>
+
+<image id="FL_9_png" x="0" y="0" width="153" height="151" xlink:href="./images/FL_9_png.png"/>
+
+<image id="FL_10_png" x="0" y="0" width="153" height="153" xlink:href="./images/FL_10_png.png"/>
+
+<image id="FL_11_png" x="0" y="0" width="152" height="151" xlink:href="./images/FL_11_png.png"/>
+
+<image id="FL_12_png" x="0" y="0" width="153" height="151" xlink:href="./images/FL_12_png.png"/>
+
+<image id="FL_13_png" x="0" y="0" width="152" height="151" xlink:href="./images/FL_13_png.png"/>
+
+<image id="FL_14_png" x="0" y="0" width="152" height="151" xlink:href="./images/FL_14_png.png"/>
+
+<image id="FL_15_png" x="0" y="0" width="152" height="151" xlink:href="./images/FL_15_png.png"/>
+
+<image id="Bitmap_1" x="0" y="0" width="17" height="17" xlink:href="./images/Bitmap_1.png"/>
+
+<g id="Symbol_8_0_Layer0_0_FILL">
+<path fill="#000000" stroke="none" d="
+M 3.5 -3.5
+Q 2.05 -5 0 -5 -2.05 -5 -3.55 -3.5 -5 -2.05 -5 0 -5 2.05 -3.55 3.55 -2.05 5 0 5 2.05 5 3.5 3.55 5 2.05 5 0 5 -2.05 3.5 -3.5 Z"/>
+</g>
+
+<path id="Symbol_1_0_Layer0_0_1_STROKES" stroke="#66FF00" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" fill="none" d="
+M -92 74.5
+L 92 -74.5"/>
+
+<path id="Symbol_2_0_Layer0_0_1_STROKES" stroke="#66CC33" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" fill="none" d="
+M -92 74
+L 92 -74"/>
+
+<path id="Symbol_14_0_Layer0_0_1_STROKES" stroke="#6600FF" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" fill="none" d="
+M 24.5 120.5
+L -24.5 -120.5"/>
+
+<path id="Symbol_15_0_Layer0_0_1_STROKES" stroke="#66CC00" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" fill="none" d="
+M 18 128.5
+L -18 -128.5"/>
+
+<path id="Symbol_16_0_Layer0_0_1_STROKES" stroke="#66CC00" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" fill="none" d="
+M 53.5 0
+L -53.5 0"/>
+
+<path id="Symbol_17_0_Layer0_0_1_STROKES" stroke="#669900" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" fill="none" d="
+M 7.5 137.5
+L -7.5 -137.5"/>
+
+<path id="Symbol_21_0_Layer0_0_1_STROKES" stroke="#666600" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" fill="none" d="
+M -94.5 111.5
+L 94.5 -111.5"/>
+
+<path id="Symbol_22_0_Layer0_0_1_STROKES" stroke="#666600" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" fill="none" d="
+M 22 -66.5
+L -22 66.5"/>
+
+<path id="Symbol_23_0_Layer0_0_1_STROKES" stroke="#660000" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" fill="none" d="
+M -105 118.5
+L 105 -118.5"/>
+
+<path id="Symbol_24_0_Layer0_0_1_STROKES" stroke="#66FF33" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" fill="none" d="
+M -111 129.5
+L 111 -129.5"/>
+
+<path id="Symbol_25_0_Layer0_0_1_STROKES" stroke="#66FF33" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" fill="none" d="
+M 17 -67
+L -17 67"/>
+
+<path id="Symbol_29_0_Layer0_0_1_STROKES" stroke="#66FFFF" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" fill="none" d="
+M -28 -24
+L 28 24"/>
+
+<path id="Symbol_30_0_Layer0_0_1_STROKES" stroke="#66FFFF" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" fill="none" d="
+M 76.5 -27
+L -76.45 27"/>
+
+<path id="Symbol_31_0_Layer0_0_1_STROKES" stroke="#669966" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" fill="none" d="
+M 125.75 137.75
+L -125.7 -137.75"/>
+
+<path id="Symbol_32_0_Layer0_0_1_STROKES" stroke="#669966" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" fill="none" d="
+M -290.7 -94.75
+L 290.75 94.75"/>
+
+<path id="Symbol_33_0_Layer0_0_1_STROKES" stroke="#666699" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" fill="none" d="
+M 124.75 137.75
+L -124.7 -137.7"/>
+
+<path id="Symbol_34_0_Layer0_0_1_STROKES" stroke="#669966" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" fill="none" d="
+M 123.2 137.25
+L -123.2 -137.2"/>
+
+<path id="Symbol_35_0_Layer0_0_1_STROKES" stroke="#669966" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" fill="none" d="
+M -230.2 -95.7
+L 230.2 95.75"/>
+
+<path id="Symbol_36_0_Layer0_0_1_STROKES" stroke="#66FF99" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" fill="none" d="
+M -309.95 -84
+L 310 84"/>
+
+<path id="Symbol_37_0_Layer0_0_1_STROKES" stroke="#66FF99" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" fill="none" d="
+M -347.95 -50
+L 348 50"/>
+
+<path id="Symbol_8_0_Layer0_0_1_STROKES" stroke="#000000" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" fill="none" d="
+M 5 0
+Q 5 2.05 3.5 3.55 2.05 5 0 5 -2.05 5 -3.55 3.55 -5 2.05 -5 0 -5 -2.05 -3.55 -3.5 -2.05 -5 0 -5 2.05 -5 3.5 -3.5 5 -2.05 5 0 Z"/>
+</defs>
+
+<g transform="matrix( 0.1794281005859375, 0, 0, 0.1794891357421875, 1,-3) ">
+<use xlink:href="#image__2__png"/>
+</g>
+
+<g transform="matrix( 0.380401611328125, 0, 0, 0.28131103515625, 256,264) ">
+<use xlink:href="#Servo_Amp_png"/>
+</g>
+
+<g transform="matrix( 0.30084228515625, 0, 0, 0.302886962890625, 421,260) ">
+<use xlink:href="#Power_supply_png"/>
+</g>
+
+<g transform="matrix( 0.3291015625, 0, 0, 0.31072998046875, 7,85) ">
+<use xlink:href="#OA150A__2__png"/>
+</g>
+
+<g transform="matrix( 0.5130615234375, 0, 0, 0.457427978515625, 169,87) ">
+<use xlink:href="#Attenuator_png"/>
+</g>
+
+<g transform="matrix( 0.2926483154296875, 0, 0, 0.29827880859375, 338,87) ">
+<use xlink:href="#PAI50C__2__png"/>
+</g>
+
+<g transform="matrix( 0.215087890625, -0.00146484375, 0, 0.27606201171875, 482.55,109.8) ">
+<use xlink:href="#Tacho_unit_png"/>
+</g>
+
+<g transform="matrix( 0.213714599609375, 0, 0, 0.2240447998046875, 553,279) ">
+<use xlink:href="#IP150H_png"/>
+</g>
+
+<g transform="matrix( 1, 0, 0, 1, 434.5,313.05) ">
+<clipPath id="Mask_Mask_1">
+<rect x="-2" y="-2" width="81" height="19.9" fill="#FFFFFF" stroke="none"/>
+</clipPath>
+
+<text clip-path="url(#Mask_Mask_1)" writing-mode="lr"><tspan x="0" y="12.4" baseline-shift="0%" font-family="Calibri" font-weight="bold" font-size="13" fill="#0066CC" xml:space="preserve">Power Supply</tspan></text>
+</g>
+
+<g transform="matrix( 1, 0, 0, 1, 310,312.05) ">
+<clipPath id="Mask_Mask_2">
+<rect x="-2" y="-2" width="72" height="19.9" fill="#FFFFFF" stroke="none"/>
+</clipPath>
+
+<text clip-path="url(#Mask_Mask_2)" writing-mode="lr"><tspan x="0" y="12.4" baseline-shift="0%" font-family="Calibri" font-weight="bold" font-size="13" fill="#0066CC" xml:space="preserve">Servo Amp</tspan></text>
+</g>
+
+<g transform="matrix( 1, 0, 0, 1, 715.25,161.6) ">
+<clipPath id="Mask_Mask_3">
+<rect x="-2" y="-2" width="72" height="18.65" fill="#FFFFFF" stroke="none"/>
+</clipPath>
+
+<text clip-path="url(#Mask_Mask_3)" writing-mode="lr"><tspan x="0" y="11.45" baseline-shift="0%" font-family="Calibri" font-weight="bold" font-size="12" fill="#0066CC" xml:space="preserve">Tacho Unit</tspan></text>
+</g>
+
+<g transform="matrix( 1, 0, 0, 1, 218,146.65) ">
+<clipPath id="Mask_Mask_4">
+<rect x="-2" y="-2" width="64" height="19.9" fill="#FFFFFF" stroke="none"/>
+</clipPath>
+
+<text clip-path="url(#Mask_Mask_4)" writing-mode="lr"><tspan x="0" y="12.4" baseline-shift="0%" font-family="Calibri" font-weight="bold" font-size="13" fill="#0066CC" xml:space="preserve">Attenuator</tspan></text>
+</g>
+
+<g transform="matrix( 1, 0, 0, 1, 586,341.55) ">
+<clipPath id="Mask_Mask_5">
+<rect x="-2" y="-2" width="56" height="19.9" fill="#FFFFFF" stroke="none"/>
+</clipPath>
+
+<text clip-path="url(#Mask_Mask_5)" writing-mode="lr"><tspan x="0" y="12.4" baseline-shift="0%" font-family="Calibri" font-weight="bold" font-size="13" fill="#0066CC" xml:space="preserve">IP150H</tspan></text>
+</g>
+
+<g transform="matrix( 1, 0, 0, 1, 36.1,323.95) ">
+<clipPath id="Mask_Mask_6">
+<rect x="-2" y="-2" width="207.95" height="22.35" fill="#FFFFFF" stroke="none"/>
+</clipPath>
+
+<text clip-path="url(#Mask_Mask_6)" writing-mode="lr"><tspan x="0" y="14.3" baseline-shift="0%" font-family="Calibri" font-weight="bold" font-size="15" fill="#0000FF" xml:space="preserve">Komponen Penghubung</tspan></text>
+</g>
+
+<g id="line1" transform="matrix( 1, 0, 0, 1, 368,239.55) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#Symbol_1_0_Layer0_0_1_STROKES"/>
+</g>
+</g>
+
+<g id="line2" transform="matrix( 1, 0, 0, 1, 369.45,259.95) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#Symbol_2_0_Layer0_0_1_STROKES"/>
+</g>
+</g>
+
+<g id="line6" transform="matrix( 1, 0, 0, 1, 412.5,223.55) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#Symbol_14_0_Layer0_0_1_STROKES"/>
+</g>
+</g>
+
+<g id="line7" transform="matrix( 1, 0, 0, 1, 422,232.55) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#Symbol_15_0_Layer0_0_1_STROKES"/>
+</g>
+</g>
+
+<g id="line7k2" transform="matrix( 1, 0, 0, 1, 351.5,106.75) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#Symbol_16_0_Layer0_0_1_STROKES"/>
+</g>
+</g>
+
+<g id="line8" transform="matrix( 1, 0, 0, 1, 432.5,241.55) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#Symbol_17_0_Layer0_0_1_STROKES"/>
+</g>
+</g>
+
+<g id="line9" transform="matrix( 1, 0, 0, 1, 624.5,232.55) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#Symbol_21_0_Layer0_0_1_STROKES"/>
+</g>
+</g>
+
+<g id="line9k2" transform="matrix( 1, 0, 0, 1, 697,187.55) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#Symbol_22_0_Layer0_0_1_STROKES"/>
+</g>
+</g>
+
+<g id="line10" transform="matrix( 1, 0, 0, 1, 635,242.55) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#Symbol_23_0_Layer0_0_1_STROKES"/>
+</g>
+</g>
+
+<g id="line11" transform="matrix( 1, 0, 0, 1, 642,249.55) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#Symbol_24_0_Layer0_0_1_STROKES"/>
+</g>
+</g>
+
+<g id="line11k2" transform="matrix( 1, 0, 0, 1, 736,187.05) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#Symbol_25_0_Layer0_0_1_STROKES"/>
+</g>
+</g>
+
+<g id="line12" transform="matrix( 1, 0, 0, 1, 325,153.05) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#Symbol_29_0_Layer0_0_1_STROKES"/>
+</g>
+</g>
+
+<g id="line13" transform="matrix( 1, 0, 0, 1, 220.5,172.05) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#Symbol_30_0_Layer0_0_1_STROKES"/>
+</g>
+</g>
+
+<g id="line3" transform="matrix( 1, 0, 0, 1, 188.75,240.75) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#Symbol_31_0_Layer0_0_1_STROKES"/>
+</g>
+</g>
+
+<g id="line3k2" transform="matrix( 1, 0, 0, 1, 353.75,197.75) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#Symbol_32_0_Layer0_0_1_STROKES"/>
+</g>
+</g>
+
+<g id="line4" transform="matrix( 1, 0, 0, 1, 209.75,240.75) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#Symbol_33_0_Layer0_0_1_STROKES"/>
+</g>
+</g>
+
+<g id="line5" transform="matrix( 1, 0, 0, 1, 230.3,240.25) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#Symbol_34_0_Layer0_0_1_STROKES"/>
+</g>
+</g>
+
+<g id="line5k2" transform="matrix( 1, 0, 0, 1, 337.3,198.75) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#Symbol_35_0_Layer0_0_1_STROKES"/>
+</g>
+</g>
+
+<g id="line14" transform="matrix( 1, 0, 0, 1, 334,241.05) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#Symbol_36_0_Layer0_0_1_STROKES"/>
+</g>
+</g>
+
+<g id="line15" transform="matrix( 1, 0, 0, 1, 374,228.05) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#Symbol_37_0_Layer0_0_1_STROKES"/>
+</g>
+</g>
+
+<g id="s" transform="matrix( 1, 0, 0, 1, 733,74.05) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#Symbol_8_0_Layer0_0_FILL"/>
+
+<use xlink:href="#Symbol_8_0_Layer0_0_1_STROKES"/>
+</g>
+</g>
+
+<g id="s1" transform="matrix( 1, 0, 0, 1, 459.45,166.6) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#Symbol_8_0_Layer0_0_FILL"/>
+
+<use xlink:href="#Symbol_8_0_Layer0_0_1_STROKES"/>
+</g>
+</g>
+
+<g transform="matrix( 0.111114501953125, 0, 0, 0.111846923828125, 268,306) ">
+<use xlink:href="#FL_1_png"/>
+</g>
+
+<g transform="matrix( 0.111846923828125, 0, 0, 0.111846923828125, 269,326) ">
+<use xlink:href="#FL_2_png"/>
+</g>
+
+<g transform="matrix( 0.112579345703125, 0, 0, 0.112579345703125, 306,370) ">
+<use xlink:href="#FL_3_png"/>
+</g>
+
+<g transform="matrix( 0.111846923828125, 0, 0, 0.111114501953125, 326,370) ">
+<use xlink:href="#FL_4_png"/>
+</g>
+
+<g transform="matrix( 0.112579345703125, 0, 0, 0.112579345703125, 345,369) ">
+<use xlink:href="#FL_5_png"/>
+</g>
+
+<g transform="matrix( 0.112579345703125, 0, 0, 0.112579345703125, 636,284) ">
+<use xlink:href="#FL_3_png"/>
+</g>
+
+<g transform="matrix( 0.112579345703125, 0, 0, 0.112579345703125, 559,286) ">
+<use xlink:href="#FL_5_png"/>
+</g>
+
+<g id="s2" transform="matrix( 1, 0, 0, 1, 459.45,187.05) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#Symbol_8_0_Layer0_0_FILL"/>
+
+<use xlink:href="#Symbol_8_0_Layer0_0_1_STROKES"/>
+</g>
+</g>
+
+<g id="s3" transform="matrix( 1, 0, 0, 1, 63.05,103) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#Symbol_8_0_Layer0_0_FILL"/>
+
+<use xlink:href="#Symbol_8_0_Layer0_0_1_STROKES"/>
+</g>
+</g>
+
+<g id="s4" transform="matrix( 1, 0, 0, 1, 85.05,103.05) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#Symbol_8_0_Layer0_0_FILL"/>
+
+<use xlink:href="#Symbol_8_0_Layer0_0_1_STROKES"/>
+</g>
+</g>
+
+<g id="s5" transform="matrix( 1, 0, 0, 1, 107.1,103.05) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#Symbol_8_0_Layer0_0_FILL"/>
+
+<use xlink:href="#Symbol_8_0_Layer0_0_1_STROKES"/>
+</g>
+</g>
+
+<g id="s6" transform="matrix( 1, 0, 0, 1, 437.5,344.55) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#Symbol_8_0_Layer0_0_FILL"/>
+
+<use xlink:href="#Symbol_8_0_Layer0_0_1_STROKES"/>
+</g>
+</g>
+
+<g id="s7" transform="matrix( 1, 0, 0, 1, 405.95,105.05) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#Symbol_8_0_Layer0_0_FILL"/>
+
+<use xlink:href="#Symbol_8_0_Layer0_0_1_STROKES"/>
+</g>
+</g>
+
+<g id="s8" transform="matrix( 1, 0, 0, 1, 438,377) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#Symbol_8_0_Layer0_0_FILL"/>
+
+<use xlink:href="#Symbol_8_0_Layer0_0_1_STROKES"/>
+</g>
+</g>
+
+<g transform="matrix( 0.111846923828125, 0, 0, 0.111846923828125, 379,96) ">
+<use xlink:href="#FL_6_png"/>
+</g>
+
+<g transform="matrix( 0.10968017578125, 0, 0, 0.111846923828125, 428,352) ">
+<use xlink:href="#FL_7_png"/>
+</g>
+
+<g transform="matrix( 0.111846923828125, 0, 0, 0.108978271484375, 417,97) ">
+<use xlink:href="#FL_8_png"/>
+</g>
+
+<g transform="matrix( 0.10968017578125, 0, 0, 0.111846923828125, 289,100) ">
+<use xlink:href="#FL_7_png"/>
+</g>
+
+<g id="s9" transform="matrix( 1, 0, 0, 1, 717.25,123) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#Symbol_8_0_Layer0_0_FILL"/>
+
+<use xlink:href="#Symbol_8_0_Layer0_0_1_STROKES"/>
+</g>
+</g>
+
+<g id="s10" transform="matrix( 1, 0, 0, 1, 530,361) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#Symbol_8_0_Layer0_0_FILL"/>
+
+<use xlink:href="#Symbol_8_0_Layer0_0_1_STROKES"/>
+</g>
+</g>
+
+<g id="s11" transform="matrix( 1, 0, 0, 1, 753,123.05) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#Symbol_8_0_Layer0_0_FILL"/>
+
+<use xlink:href="#Symbol_8_0_Layer0_0_1_STROKES"/>
+</g>
+</g>
+
+<g transform="matrix( 0.111114501953125, 0, 0, 0.112579345703125, 521,335) ">
+<use xlink:href="#FL_9_png"/>
+</g>
+
+<g transform="matrix( 0.111114501953125, 0, 0, 0.111114501953125, 728,115) ">
+<use xlink:href="#FL_10_png"/>
+</g>
+
+<g transform="matrix( 0.111846923828125, 0, 0, 0.112579345703125, 521,370) ">
+<use xlink:href="#FL_11_png"/>
+</g>
+
+<g transform="matrix( 0.111114501953125, 0, 0, 0.112579345703125, 667,245) ">
+<use xlink:href="#FL_9_png"/>
+</g>
+
+<g transform="matrix( 0.111846923828125, 0, 0, 0.112579345703125, 711,246) ">
+<use xlink:href="#FL_11_png"/>
+</g>
+
+<g id="s12" transform="matrix( 1, 0, 0, 1, 353,176.6) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#Symbol_8_0_Layer0_0_FILL"/>
+
+<use xlink:href="#Symbol_8_0_Layer0_0_1_STROKES"/>
+</g>
+</g>
+
+<g id="s13" transform="matrix( 1, 0, 0, 1, 144.05,199.05) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#Symbol_8_0_Layer0_0_FILL"/>
+
+<use xlink:href="#Symbol_8_0_Layer0_0_1_STROKES"/>
+</g>
+</g>
+
+<g id="s14" transform="matrix( 1, 0, 0, 1, 24.05,157.6) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#Symbol_8_0_Layer0_0_FILL"/>
+
+<use xlink:href="#Symbol_8_0_Layer0_0_1_STROKES"/>
+</g>
+</g>
+
+<g id="s15" transform="matrix( 1, 0, 0, 1, 24.05,178.05) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#Symbol_8_0_Layer0_0_FILL"/>
+
+<use xlink:href="#Symbol_8_0_Layer0_0_1_STROKES"/>
+</g>
+</g>
+
+<g transform="matrix( 0.111114501953125, 0, 0, 0.112579345703125, 289,119) ">
+<use xlink:href="#FL_12_png"/>
+</g>
+
+<g transform="matrix( 0.111846923828125, 0, 0, 0.112548828125, 290,138) ">
+<use xlink:href="#FL_13_png"/>
+</g>
+
+<g transform="matrix( 0.11181640625, 0, 0, 0.112579345703125, 636,317) ">
+<use xlink:href="#FL_14_png"/>
+</g>
+
+<g transform="matrix( 0.111846923828125, 0, 0, 0.112579345703125, 712,271) ">
+<use xlink:href="#FL_15_png"/>
+</g>
+
+<g transform="matrix( 1, 0, 0, 1, 271,25.8) ">
+<clipPath id="Mask_Mask_7">
+<rect x="-2" y="-2" width="241" height="34.45" fill="#FFFFFF" stroke="none"/>
+</clipPath>
+
+<text clip-path="url(#Mask_Mask_7)" writing-mode="lr"><tspan x="0" y="25.2" baseline-shift="0%" font-family="Impact" font-size="25" fill="#000000" xml:space="preserve">SIMULASI  CLOSELOOP</tspan></text>
+</g>
+
+<g id="t1" transform="matrix( 1, 0, 0, 1, 42.6,361.5) ">
+<g transform="matrix( 0.111114501953125, 0, 0, 0.111846923828125, -8.5,-8.5) ">
+<use xlink:href="#FL_1_png"/>
+</g>
+</g>
+
+<g id="t2" transform="matrix( 1, 0, 0, 1, 75.55,362.05) ">
+<g transform="matrix( 0.111846923828125, 0, 0, 0.111846923828125, -8.5,-8.5) ">
+<use xlink:href="#FL_2_png"/>
+</g>
+</g>
+
+<g id="t3" transform="matrix( 1, 0, 0, 1, 102.6,361.5) ">
+<g transform="matrix( 1, 0, 0, 1, -8.5,-8.5) ">
+<use xlink:href="#Bitmap_1"/>
+</g>
+</g>
+
+<g id="t4" transform="matrix( 1, 0, 0, 1, 134.6,361.5) ">
+<g transform="matrix( 0.111846923828125, 0, 0, 0.111114501953125, -8.5,-8.5) ">
+<use xlink:href="#FL_4_png"/>
+</g>
+</g>
+
+<g id="t5" transform="matrix( 1, 0, 0, 1, 168.6,361.5) ">
+<g transform="matrix( 0.112579345703125, 0, 0, 0.112579345703125, -8.5,-8.5) ">
+<use xlink:href="#FL_5_png"/>
+</g>
+</g>
+
+<g id="t6" transform="matrix( 1, 0, 0, 1, 41.55,392.5) ">
+<g transform="matrix( 0.111846923828125, 0, 0, 0.111846923828125, -8.5,-8.5) ">
+<use xlink:href="#FL_6_png"/>
+</g>
+</g>
+
+<g id="t7" transform="matrix( 1, 0, 0, 1, 75.55,392.5) ">
+<g transform="matrix( 0.10968017578125, 0, 0, 0.111846923828125, -8.5,-8.5) ">
+<use xlink:href="#FL_7_png"/>
+</g>
+</g>
+
+<g id="t8" transform="matrix( 1, 0, 0, 1, 109.55,392.5) ">
+<g transform="matrix( 0.111846923828125, 0, 0, 0.108978271484375, -8.5,-8.5) ">
+<use xlink:href="#FL_8_png"/>
+</g>
+</g>
+
+<g id="t9" transform="matrix( 1, 0, 0, 1, 135.5,392.5) ">
+<g transform="matrix( 0.111114501953125, 0, 0, 0.112579345703125, -8.5,-8.5) ">
+<use xlink:href="#FL_9_png"/>
+</g>
+</g>
+
+<g id="t10" transform="matrix( 1, 0, 0, 1, 166.5,392.5) ">
+<g transform="matrix( 0.111114501953125, 0, 0, 0.111114501953125, -8.5,-8.5) ">
+<use xlink:href="#FL_10_png"/>
+</g>
+</g>
+
+<g id="t11" transform="matrix( 1, 0, 0, 1, 42.5,423.5) ">
+<g transform="matrix( 0.111846923828125, 0, 0, 0.112579345703125, -8.5,-8.5) ">
+<use xlink:href="#FL_11_png"/>
+</g>
+</g>
+
+<g id="t12" transform="matrix( 1, 0, 0, 1, 75.5,423.5) ">
+<g transform="matrix( 0.111114501953125, 0, 0, 0.112579345703125, -8.5,-8.5) ">
+<use xlink:href="#FL_12_png"/>
+</g>
+</g>
+
+<g id="t13" transform="matrix( 1, 0, 0, 1, 108.5,423.5) ">
+<g transform="matrix( 0.111846923828125, 0, 0, 0.112548828125, -8.5,-8.5) ">
+<use xlink:href="#FL_13_png"/>
+</g>
+</g>
+
+<g id="t14" transform="matrix( 1, 0, 0, 1, 140.5,423.5) ">
+<g transform="matrix( 0.11181640625, 0, 0, 0.112579345703125, -8.5,-8.5) ">
+<use xlink:href="#FL_14_png"/>
+</g>
+</g>
+
+<g id="t15" transform="matrix( 1, 0, 0, 1, 168.5,423.5) ">
+<g transform="matrix( 0.111846923828125, 0, 0, 0.112579345703125, -8.5,-8.5) ">
+<use xlink:href="#FL_15_png"/>
+</g>
+</g>
+</svg>
