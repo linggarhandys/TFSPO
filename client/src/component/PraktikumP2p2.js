@@ -16,6 +16,7 @@ import { useTheme } from "@mui/material/styles";
 import KeyboardArrowLeft from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
 import Knobp2p2 from "./Knobp2p2";
+import Pengumpulan from "../page-praktikan/Pengumpulan";
 import UploadData from "../page-praktikan/UploadData";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";

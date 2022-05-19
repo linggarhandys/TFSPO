@@ -23,8 +23,11 @@
     }
     
     .paddingcenterouter {
-            padding-top: 5%;
-            width: 100%;
+        padding-top: 5%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .loginlogocolumn {
@@ -45,6 +48,17 @@
     }
 }
 
+@media only screen and (min-width: 901px) {
+    .paddingcenterouter {
+        display: table;
+        position: relative;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 80%;
+    }
+}
+
 .logincontainer{
     display: table;
     position: absolute;
@@ -60,14 +74,6 @@
     padding: 0 0 0 0;
 }
 
-.paddingcenterouter {
-    display: table;
-    position: relative;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-}
 
 .paddingcentermiddle{
     display: table-cell;
@@ -128,6 +134,7 @@
     font-family: 'Droid serif', serif;
     font-weight: 400;
     text-align: justify;
+    font-size:18px;
 }
 
 .loginfont .judul1{
@@ -205,8 +212,8 @@
 
 .loginlogocolumn{
     float: left;
-    width: 5vw;
-    padding-right: 1vw;
+    width: 6vh;
+    padding-left: 1vw;
 }
 
 .navigationcolumn {
@@ -242,9 +249,10 @@
 
 .loginparagrafimage{
     display: block;
-    padding-top: 1%;
     max-width: 100%;
     max-height: 100%;
+    margin-top: 7vh;
+    margin-bottom: 7vh;
 }
 
 .loginparagrafdeskripsi{
@@ -281,7 +289,7 @@
 
 .loginfooter {
     position: fixed;
-    height: 10vh;
+    height: 8vh;
     background-color: rgb(13, 50, 68);
     bottom: 0px;
     left: 0px;
@@ -351,3 +359,4 @@
     border: 0;
     overflow: hidden;
 }
+

@@ -41,9 +41,10 @@ export default function Profil() {
     [`&.${tableCellClasses.head}`]: {
       backgroundColor: theme.palette.common.black,
       color: theme.palette.common.white,
+      fontSize: 18,
     },
     [`&.${tableCellClasses.body}`]: {
-      fontSize: 14,
+      fontSize: 16,
     },
   }));
 
@@ -126,10 +127,10 @@ export default function Profil() {
 
   return (
     <div>
-      <Grid container spacing={8} column={12}>
-        <Grid item xs={12} md={6}>
+      <Grid container >
+        <Grid item xs={12} md={6} style={{paddingLeft: "18px", paddingRight: "18px"}}>
           <Paper elevation={3}>
-            <Box sx={{ margin: 2 }}>
+            <Box sx={{ padding: 2 }}>
               <Typography variant="h5">{getUser[1].toString()}</Typography>
               <Typography variant="h6">{getUser[2].toString()}</Typography>
               <Typography variant="overline">
@@ -138,9 +139,9 @@ export default function Profil() {
             </Box>
           </Paper>
         </Grid>
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={6} style={{paddingLeft: "18px", paddingRight: "18px"}}>
           <Paper elevation={3}>
-            <Box sx={{ margin: 2 }}>
+            <Box sx={{ padding: 2 }}>
               <Typography variant="h4">Praktikum P-1</Typography>
               <Typography variant="h5">{getUser[18].toString()}</Typography>
               <Typography variant="h6"></Typography>
@@ -156,7 +157,7 @@ export default function Profil() {
           </Paper>
         </Grid>
         <Grid item xs sm m lg>
-          <Typography variant="h5">Progress Praktikum</Typography>
+          <Typography variant="h5" style={{marginBottom: "10px"}}>Progress Praktikum</Typography>
           <TableContainer component={Paper}>
             <Table sx={{ minWidth: 700 }} aria-label="customized table">
               <TableHead>

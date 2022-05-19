@@ -5,6 +5,7 @@ import axios from "axios";
 import { Box } from "@mui/system";
 import { CSVLink, CSVDownload } from "react-csv";
 import { makeStyles } from "@mui/styles";
+// import aae from "adobe-animate-embed";
 //import html from "./asset/Animate EXport1/P2 Closeloop.html";
 import Download from "./page-praktikan/Download";
 
