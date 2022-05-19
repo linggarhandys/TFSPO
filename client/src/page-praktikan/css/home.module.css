@@ -1,0 +1,117 @@
+.navigationcolumn {
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10%;
+    min-width: 100%;
+}
+
+.navigationrow {
+    display: table;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+
+.navigation {
+    background-color: #fff;
+    border: 2px black;
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px,
+        rgba(45, 35, 66, .3) 0 7px 13px -3px,
+        #01272b 0 -3px 0 inset;
+    border-radius: 5px;
+    min-height: 10%;
+    max-width: 100%;
+    min-width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.paddingcenterouter {
+    display: table;
+    position: relative;
+    padding-top: 5%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.paddingcentermiddle {
+    display: table-cell;
+    vertical-align: middle;
+    width: 25%;
+}
+
+.paddingcenterinner {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+    /* Whatever width you want */
+}
+
+.navigasiteks{
+    text-align: center;
+    font-Family: 'Libre Baskerville', serif;
+        font-weight: 100;
+        font-size: 150%;
+}
+
+.paper {
+    box-shadow: rgba(0, 51, 146, 0.637) 0 4px 8px,
+        rgba(33, 0, 103, 0.488) 0 7px 13px -3px,
+        #00606b 0 -3px 0 inset;
+    border-radius: 5px;
+    background-color: rgb(111, 181, 228);
+    min-width: 5vw;
+    min-height: 5vw;
+    margin-right: 1vw;
+}
+
+.paper .footer{
+    position: relative;
+    height: 1.5vw;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-family: 'Droid serif', serif;
+    font-weight: 400;
+    color: #fff;
+}
+
+.paper .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    /* vertical centering   */
+    justify-content: center;
+    /* horizontal centering */
+}
+
+.iconnavigasi{
+    height: 100%;
+    width: 100%;
+}
+
+.textwrapper{
+border: 1px  black;
+background: #fff;
+border-radius: 10px;
+padding: 2%;
+}
+
+.teks{
+    font-family: 'Roboto', sans-serif;
+    font-size: 90%;
+    text-align: justify;
+}
