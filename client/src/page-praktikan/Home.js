@@ -19,9 +19,10 @@ import AssistantIcon from "@mui/icons-material/Assistant";
 var utc = require("dayjs/plugin/utc");
 dayjs.extend(utc);
 
-export default function Profil() {
+export default function Profil(props) {
   ///  const user = getUser();
   // handle click event of logout button
+  console.log("props => ", props)
 
   useEffect(() => {}, []);
 
@@ -64,31 +65,37 @@ export default function Profil() {
   async function handleProfil(event) {
     event.preventDefault();
     navigate("../profil", { replace: true });
+    props.changeIndex(1);
   }
 
   async function handleProfil(event) {
     event.preventDefault();
     navigate("../profil", { replace: true });
+    props.changeIndex(1);
   }
 
   async function handlePraktikum(event) {
     event.preventDefault();
     navigate("../praktikum", { replace: true });
+    props.changeIndex(4);
   }
 
   async function handlePengumuman(event) {
     event.preventDefault();
     navigate("../pengumuman", { replace: true });
+    props.changeIndex(3);
   }
 
   async function handlePengumpulan(event) {
     event.preventDefault();
     navigate("../pengumpulan", { replace: true });
+    props.changeIndex(6);
   }
 
   async function handlePenilaian(event) {
     event.preventDefault();
     navigate("../penilaian", { replace: true });
+    props.changeIndex(5);
   }
 
   return (

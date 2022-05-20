@@ -268,6 +268,11 @@ export default function Sidebar() {
     );
   }
 
+  const changeIndex = (i) => {
+    console.log("changeIndex called => ", i)
+    setCurrentIndex(i)
+  }
+
   return (
     <MemoryRouter initialEntries={["/"]} initialIndex={0}>
       {user ? (
@@ -380,7 +385,7 @@ export default function Sidebar() {
                 <ListItemLink
                   to="home"
                   primary="Halaman Depan"
-                  icon={<HomeIcon />}
+                  icon={<HomeIcon/>}
                   index={0}
                 />
                 <ListItemLink
@@ -430,12 +435,16 @@ export default function Sidebar() {
               </List>
             ) : (
               <List>
+<<<<<<< HEAD
                 <ListItemLink
                   index={0}
                   to="home"
                   primary="Home"
                   icon={<HomeIcon />}
                 />
+=======
+                <ListItemLink index={0} to="home" primary="Home" icon={<HomeIcon changeIndex={(i) => changeIndex(i)}  />} />
+>>>>>>> 7d61cb63755001be5b0cdec7ce98fee4cc85fd1b
                 <ListItemLink
                   to="profil"
                   primary="Profil"
@@ -478,8 +487,8 @@ export default function Sidebar() {
               <DrawerHeader />
               <Routes>
                 <Route path="/login" element={<Login />} />
-                <Route path="home/" element={<Home />} />
-                <Route path="/" element={<Home />} />
+                <Route path="home/" element={<Home changeIndex={(i) => changeIndex(i)} />} />
+                <Route path="/" element={<Home changeIndex={(i) => changeIndex(i)} />} />
                 <Route path="/profil" element={<Profilpraktikan />} />
                 <Route path="/penilaian" element={<Penilaian />} />
 
