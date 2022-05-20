@@ -209,7 +209,6 @@ const UploadData = ({}) => {
         <TableHead>
           <TableRow>
             <StyledTableCell align="center">Item</StyledTableCell>
-            <StyledTableCell align="center">Status</StyledTableCell>
             <StyledTableCell align="center">Upload</StyledTableCell>
           </TableRow>
         </TableHead>
@@ -219,7 +218,6 @@ const UploadData = ({}) => {
               <StyledTableCell component="th" scope="row" align="center">
                 {rows.Item}
               </StyledTableCell>
-              <StyledTableCell align="center">{rows.Status}</StyledTableCell>
               <StyledTableCell align="center">
                 <form onSubmit={handleOnSubmit}>
                   <input

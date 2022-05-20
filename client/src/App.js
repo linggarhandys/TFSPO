@@ -123,8 +123,6 @@ const Drawer = styled(MuiDrawer, {
   }),
 }));
 
-
-
 // ListItemLink.propTypes = {
 //   icon: PropTypes.element,
 //   primary: PropTypes.string.isRequired,
@@ -243,7 +241,7 @@ export default function Sidebar() {
 
   function ListItemLink(props) {
     const { icon, primary, to, index } = props;
-  
+
     const renderLink = React.useMemo(
       () =>
         React.forwardRef(function Link(itemProps, ref) {
@@ -251,12 +249,19 @@ export default function Sidebar() {
         }),
       [to]
     );
-  
+
     return (
       <li>
         {console.log("indexx", index, currentIndex)}
         <ListItem button component={renderLink}>
-          {icon ? <ListItemIcon onClick={() => setCurrentIndex(index)} style={{color: currentIndex == index ? "#b8bbbf" : "#5d5f61"}}>{icon}</ListItemIcon> : null}
+          {icon ? (
+            <ListItemIcon
+              onClick={() => setCurrentIndex(index)}
+              style={{ color: currentIndex == index ? "#b8bbbf" : "#5d5f61" }}
+            >
+              {icon}
+            </ListItemIcon>
+          ) : null}
           <ListItemText primary={primary} />
         </ListItem>
       </li>
@@ -287,9 +292,13 @@ export default function Sidebar() {
               <img
                 src={itslogo}
                 alt="Logo ITS"
-                style={{width: "3.5vw", height: "3vw", marginRight: "2vw"}}
+                style={{ width: "3.5vw", height: "3vw", marginRight: "2vw" }}
               />
-              <img src={logo} alt="Logo" style={{width: "3vw", height: "3vw"}} />
+              <img
+                src={logo}
+                alt="Logo"
+                style={{ width: "3vw", height: "3vw" }}
+              />
               <Box sx={{ flexGrow: 1 }} />
               <Box sx={{ display: { xs: "none", md: "flex" } }}>
                 <IconButton
@@ -421,7 +430,12 @@ export default function Sidebar() {
               </List>
             ) : (
               <List>
-                <ListItemLink index={0} to="home" primary="Home" icon={<HomeIcon />} />
+                <ListItemLink
+                  index={0}
+                  to="home"
+                  primary="Home"
+                  icon={<HomeIcon />}
+                />
                 <ListItemLink
                   to="profil"
                   primary="Profil"
@@ -472,7 +486,7 @@ export default function Sidebar() {
                 <Route path="pengumpulan" element={<Pengumpulan />} />
                 <Route path="pengumuman" element={<Pengumuman />} />
                 <Route path="praktikum" element={<Praktikum />} />
-                <Route path="/upload" element={<Pengumpulan />} />
+                <Route path="/upload" element={<UploadData />} />
                 <Route path="/pengumpulan" element={<Download />} />
                 <Route path="/pengumuman" element={<Pengumuman />} />
                 <Route path="/praktikum" element={<Praktikum />} />

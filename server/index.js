@@ -812,6 +812,39 @@ app.post(
   }
 );
 
+app.post(
+  "/api/uploadberkas",
+  storage.single("file"),
+  async (req, res) => {
+    try {
+      const { kolom, nama } = req.body;
+      const { path, mimetype, originalname } = req.file;
+      let [filename, extension] = originalname.split(".");
+
+      let nameFile =
+        filename + "-" + dayjs().format("DDMMYYYY") + "." + extension;
+      console.log(nama);
+      let task = "UPDATE user_praktikum SET " + kolom + "=$1 WHERE nama = $2";
+      const updateFile = await pool.query(task, [nameFile, nama]);
+      /* const file = new File({
+        title,
+        description,
+        file_path: path,
+        file_mimetype: mimetype
+      });
+      await file.save();*/
+      res.send("Success");
+    } catch (error) {
+      res.status(400).send(error.message);
+    }
+  },
+  (error, req, res, next) => {
+    if (error) {
+      res.status(500).send(error.message);
+    }
+  }
+);
+
 app.post("/api/download", async (req, res) => {
   try {
     const { kelompok, kolom } = req.body;
